@@ -97,7 +97,7 @@ const UpdateBook = () => {
                     </div>
                 </div>
 
-                {success ? <p className='has-text-success'>Úspěch!</p> : ''}
+                {success ? <p className='has-text-success'>Úspěch!!</p> : ''}
 
                 <button className='button' onClick={handlePost}>
                     Přidat

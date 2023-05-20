@@ -59,7 +59,7 @@ exports.deleteBook = (req, res) => {
     (err, result, fields) => {
       if (err) return console.log(err);
       res.status(200).send({
-        msg: "Book deleted",
+        msg: "Book deleted!",
         result,
       });
     }
