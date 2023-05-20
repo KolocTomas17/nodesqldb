@@ -41,7 +41,7 @@ const BoxBook = (props) => {
                     <strong>{props.name}</strong>
                 </p>
                 <p>
-                    <strong>Vydavatel {props.publisher}</strong>
+                    <strong>Vydavatelství {props.publisher}</strong>
                 </p>
                 <p className="is-size-6">Cena {props.price} Kč</p>
               </div>

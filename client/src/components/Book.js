@@ -46,7 +46,7 @@ const Book = () => {
                             <p class="subtitle is-4">Autor {book.result[0].author}</p>
                             <p class="subtitle is-5">Vydavatelství {book.result[0].publisher}</p>
                             <p class="subtitle is-6">Cena {book.result[0].price} Kč</p>
-                            <button type="submit" class="button" name="add">Koupit <i class="fas fa-shopping-cart"></i></button>
+                            <button type="submit" class="button" name="add">Koupit<i class="fas fa-shopping-cart"></i></button>
                             
                         </div>                    
                     </div>
