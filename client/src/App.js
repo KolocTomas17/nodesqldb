@@ -9,6 +9,7 @@ import CreateBook from "./components/CreateBook";
 import Error from "./components/Error";
 import UpdateUser from "./components/UpdateUser";
 import UpdateBook from "./components/UpdateBook";
+import Body from "./body";
 
 /**
  * TODO List
@@ -21,7 +22,7 @@ const App = () => {
     <>
       <Header />
       <Routes>
-        <Route exact index element={<Content />} />
+        <Route exact index element={<Body />} />
         {
           /*
             :id značí, že si pomocí v komponentu User můžeme pomocí hooku useParams()
@@ -29,10 +30,10 @@ const App = () => {
             to znamená, že vybereme přesně toho uživatele, na kterýho jsme kliknuli
           */
         }
-        <Route path='user/:id' element={<User />} />
+       {/*<Route path='user/:id' element={<User />} />
         <Route path='create' element={<CreateUser />} />
-        <Route path='update-user/:id' element={<UpdateUser />} />
-
+      <Route path='update-user/:id' element={<UpdateUser />} />*/}
+        <Route path='content' element={<Content />} />
         <Route path='book/:id' element={<Book />} />
         <Route path='createBook' element={<CreateBook />} />
         <Route path='update-book/:id' element={<UpdateBook />} />

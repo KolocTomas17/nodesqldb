@@ -48,13 +48,13 @@ const Content = () => {
   }
   return (
     <>
-      <Link to="create">
+     { /*<Link to="create">
         <button className="button crud is-success">Vytvořit uživatele</button>
       </Link>
       {users.result.map((user) => (
         <Box id={user.id} name={user.name} age={user.age} image={user.image} />
       ))}
-
+      */ }
       <Link to="createBook">
         <button className="button crud is-success">Vytvořit knihu</button>
       </Link>

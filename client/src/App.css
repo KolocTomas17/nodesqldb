@@ -75,3 +75,23 @@ img {
     transform: rotate(360deg);
   }
 }
+
+.hero {
+  background: rgba(0, 0, 0, 0.377) url(https://preview.redd.it/ttb4vo06m4r51.jpg?width=1080&crop=smart&auto=webp&v=enabled&s=e9a833f50899829d3bf63a1b971ec2a62010fce1);
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero .title {
+  font-family: 'Kaushan Script', sans-serif;
+  font-size: 5rem;
+  color: whitesmoke;
+}
+
+.hero .subtitle {
+  padding: 5px;
+  color: whitesmoke;
+}
