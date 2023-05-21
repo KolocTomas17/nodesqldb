@@ -34,7 +34,7 @@ const App = () => {
         <Route path='create' element={<CreateUser />} />
       <Route path='update-user/:id' element={<UpdateUser />} />*/}
         <Route path='content' element={<Content />} />
-        <Route path='book/:id' element={<Book />} />
+        <Route path='content/book/:id' element={<Book />} />
         <Route path='createBook' element={<CreateBook />} />
         <Route path='update-book/:id' element={<UpdateBook />} />
         <Route path='*' element={<Error />} />
