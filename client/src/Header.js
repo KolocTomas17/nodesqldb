@@ -1,8 +1,8 @@
 import { Route } from "react-router";
-import img from "./image/Snímek obrazovky 2023-05-21 093356.png";
+
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHouse, faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
   return (

@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 
+
 const BoxBook = (props) => {
   const navigate = useNavigate();
 
@@ -22,13 +23,16 @@ const BoxBook = (props) => {
   
 
   return (
-
-    <div className="user-container">
-      <Link to={`book/${props.id}`}>
+    <div className="columns">
+    <div className="container">
+    <div className="row text-center py-2">
+<Link to={`book/${props.id}`} className="column">
+<div className="content">
+      
         <div className="box">
           <article className="media">
             <div className="media-left">
-              <figure className="image is-64x64">
+              <figure className="image ">
                 <img
                   src={props.image}
                   alt="Image"
@@ -49,6 +53,7 @@ const BoxBook = (props) => {
                 </p>
                 
                 <p className="is-size-6">Cena {props.price} Kč</p>
+                <button type="submit" class="button" name="add">Koupit<i class="fas fa-shopping-cart"></i></button>
               </div>
             </div>
           </article>
@@ -57,12 +62,19 @@ const BoxBook = (props) => {
           </Link>
           <svg onClick={handleDelete} style={{ maxWidth: 64, cursor: "pointer" }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" /></svg>
         */ }
-        <div className="content">
-         <button type="submit" class="button" name="add">Koupit<i class="fas fa-shopping-cart"></i></button>
-         </div>
+       
           </div>
-      </Link>      
+          
     </div>
+    </Link>  
+</div>
+</div>
+</div>
+   
+
+
+     
+    
     
 
     

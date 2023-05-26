@@ -34,7 +34,7 @@
 }
 
 .box {
-  display: flex;
+  display: block;
   justify-content: space-between;
 }
 
@@ -47,6 +47,7 @@ img {
   max-width: fit-content;
   margin: auto;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -151,6 +152,8 @@ html {
     padding: 0;
   }
 
+
+
   .nav-item {
     position: relative;
   }
@@ -248,6 +251,15 @@ html {
   font-size: 1rem;
   text-transform: uppercase;
 }
+
+.content {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+}
+
+
 
 .main-content .section-dark.resume .fa-download {
   color: #1f2c6c;

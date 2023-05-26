@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import "../App.css";
 
 const Book = () => {
     const { id } = useParams()
@@ -33,7 +34,7 @@ const Book = () => {
 
     return (
         <>
-            <div className='card'>
+            <div className="card">
                 <div class="card-image">
                     <figure class="image">
                         <img src={book.result[0].image} alt="Placeholder image"/>
