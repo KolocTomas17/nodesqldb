@@ -17,6 +17,7 @@
 .form {
   margin: auto;
   max-width: 75vw;
+  padding-top: 5%;
 }
 
 .button.crud {
@@ -28,6 +29,7 @@
   margin: auto;
   margin-top: 1em;
   max-width: 75vw;
+
 }
 
 .box {

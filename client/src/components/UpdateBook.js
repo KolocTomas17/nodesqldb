@@ -91,6 +91,13 @@ const UpdateBook = () => {
                 </div>
 
                 <div className="field">
+                    <label className="label">Jazyk</label>
+                    <div className="control">
+                        <input required name="language" className="input" type="text" placeholder="Jazyk" onChange={e => handleChange(e)} />
+                    </div>
+                </div>
+
+                <div className="field">
                     <label className="label">Obrázek (url)</label>
                     <div className="control">
                         <input required name="image" className="input" type="text" placeholder="Obrázek" onChange={e => handleChange(e)} />

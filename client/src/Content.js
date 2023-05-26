@@ -55,11 +55,9 @@ const Content = () => {
         <Box id={user.id} name={user.name} age={user.age} image={user.image} />
       ))}
       */ }
-      <Link to="createBook">
-        <button className="button crud is-success">Vytvořit knihu</button>
-      </Link>
+
       {books.result.map((book) => (
-        <BoxBook id={book.id} name={book.name} publisher={book.publisher} author={book.author} price={book.price} image={book.image} />
+        <BoxBook id={book.id} name={book.name} publisher={book.publisher} author={book.author} price={book.price} language={book.language} image={book.image} />
       ))}
     </>
   );
