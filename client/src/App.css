@@ -1,5 +1,6 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
+
 .App {
   text-align: center;
 }
@@ -145,7 +146,7 @@ html {
   }
 
   .navbar-nav {
-    display: block;
+    display: flex;
     margin: 0;
     padding: 0;
   }

@@ -1,23 +1,21 @@
 import { Route } from "react-router";
 import img from "./image/Snímek obrazovky 2023-05-21 093356.png";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faHouse, faCartShopping } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
   return (
+    <>
     <nav className="navbar " role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="http://localhost:3001">
-          <img
-            src={img}
-            alt="Bulma: Free, open source, and modern CSS framework based on Flexbox"
-            width={112}
-            height={28}
-          />
-        </a>
+        
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
+          <Link to="/" className="navbar-item">  <FontAwesomeIcon icon={faHouse} /> </Link>
             <Link to="content" className="navbar-item">Produkty</Link>
-            <a className="navbar-item">Kontakty</a>
+            <Link to="kontakty" className="navbar-item">Kontakty</Link>
+
           </div>
         </div>
       </div>
@@ -30,10 +28,15 @@ const Header = () => {
           </span>
         </p>
         </div>
-        <a className="navbar-item">Košík</a>
+        <a className="navbar-item"><FontAwesomeIcon icon={faCartShopping} /></a>
       </div>
+      
     </nav>
+
+  </>
   );
 };
+
+
 
 export default Header;
