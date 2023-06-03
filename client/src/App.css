@@ -33,10 +33,33 @@
 
 }
 
-.box {
-  display: block;
-  justify-content: space-between;
+
+
+
+.card-image {
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
 }
+
+.container {
+  margin: 50px;
+}
+
+.columns {
+  display: flex;
+  flex-direction:column;
+  border-radius: 15px;
+}
+
+.button {
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+}
+
+
 
 img {
   max-height: 320px;
@@ -257,6 +280,11 @@ html {
   align-items: center;
   justify-content: center;
   max-width: 50%;
+}
+
+.image {
+  width: 300px;
+  height: auto;
 }
 
 
