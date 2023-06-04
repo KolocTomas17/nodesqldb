@@ -28,7 +28,10 @@ const Header = () => {
           </span>
         </p>
         </div>
+        <Link to="/kosik" className="navbar-item">
         <a className="navbar-item"><FontAwesomeIcon icon={faCartShopping} /></a>
+
+        </Link>
       </div>
       
     </nav>

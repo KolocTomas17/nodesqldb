@@ -53,11 +53,37 @@
   border-radius: 15px;
 }
 
-.button {
+
+.btn {
   align-items: center;
   justify-content: center;
-  margin-top: 250px;
+  background: none;
+  border:  1px solid black;
+  border-radius: 2px;
+  width: 75px;
+  height: 32px;
+  cursor:pointer;
+
 }
+
+@media (max-width: 768px) {
+  .media {
+   display: block;
+  }
+  .media-right {
+    display: contents;
+  }
+
+}
+@media (max-width: 425px) {
+  .img {
+   background-color: #007bff;
+   max-width: 205px;
+    margin-bottom: 15px;
+  }
+
+}
+
 
 
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import "../App.css";
 
 const Book = () => {
@@ -48,7 +48,9 @@ const Book = () => {
                             <p class="subtitle is-5">Vydavatelství {book.result[0].publisher}</p>
                             <p class="subtitle is-6">Cena {book.result[0].price} Kč</p>
                             <p class="subtitle is-6">Jazyk {book.result[0].language}</p>
-                            <button type="submit" class="button" name="add">Koupit<i class="fas fa-shopping-cart"></i></button>
+                            <Link to="/kosik">
+                            <button type="submit" class="btn" name="add">Koupit<i class="fas fa-shopping-cart"></i></button>
+                            </Link>
                             
                         </div>                    
                     </div>

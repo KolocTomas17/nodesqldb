@@ -25,7 +25,7 @@ const BoxBook = (props) => {
             <div className="media">
               <div className="media-left">
                 <figure className="image ">
-                  <img src={props.image} alt="Image" />
+                  <img src={props.image} alt="Image" className="img"/>
                 </figure>
               </div>
               <div className="media-content">
@@ -34,15 +34,26 @@ const BoxBook = (props) => {
                   <h5>{props.author}</h5>
                   <p>Vydavatel {props.publisher}</p>
                   <p>Jazyk {props.language}</p>
-                  <p className="is-size-6">Cena {props.price} Kč</p>
-
                   
+                  
+                  
+                
                 </div>
               </div>
-              <Link to="/kosik">
-              <button type="submit" class="button" name="add"> 
+              <br/>
+              <div className="media-right">
+                <Link to="/kosik">
+                <button type="submit" class="button" name="add">
                     Koupit<i class="fas fa-shopping-cart"></i>
-                  </button></Link>
+                  </button>
+                  
+                </Link>
+                <p className="is-size-6">Cena {props.price} Kč</p>
+              </div>
+              
+                
+                
+              
             </div>
           </div>
         </Link>
