@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import "../App.css";
 
 import React from "react";
@@ -58,7 +60,10 @@ const Book = () => {
                 <Popup
                   trigger={
                     <button type="submit" class="btn" name="add">
-                      Koupit <i class="fas fa-shopping-cart"></i>
+                      Koupit <FontAwesomeIcon
+                icon={faCartShopping}
+                style={{ color: "#43485C" }}
+              />
                     </button>
                   }
                   position="right center"

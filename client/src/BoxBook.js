@@ -1,4 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 const BoxBook = (props) => {
   const navigate = useNavigate();
@@ -44,7 +46,10 @@ const BoxBook = (props) => {
               <div className="media-right">
                 <Link to="/kosik">
                 <button type="submit" class="button" name="add">
-                    Koupit<i class="fas fa-shopping-cart"></i>
+                    Koupit<FontAwesomeIcon
+                icon={faCartShopping}
+                style={{ color: "#43485C" }}
+              />
                   </button>
                   
                 </Link>

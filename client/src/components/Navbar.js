@@ -23,7 +23,7 @@ function Navbar() {
         <div className="navbar-item">
           <Link to="/">
             <ul className="navbar-item">
-              <FontAwesomeIcon icon={faHouse} style={{ color: "#65686c" }} />
+              <FontAwesomeIcon icon={faHouse} style={{ color: "#43485C" }} />
             </ul>
           </Link>
         </div>
@@ -43,7 +43,7 @@ function Navbar() {
             <Link to="kosik" className="navbar-item">
               <FontAwesomeIcon
                 icon={faCartShopping}
-                style={{ color: "#65686c" }}
+                style={{ color: "#43485C" }}
               />
             </Link>
           </ul>
@@ -67,7 +67,7 @@ function Navbar() {
                 <input className="input" type="text" placeholder="nazev" />
               </div>
               <div className="control">
-                <a className="button is-info">Hledat</a>
+                <a className="button aaa">Hledat</a>
               </div>
             </div>
           </ul>

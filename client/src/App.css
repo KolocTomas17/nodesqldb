@@ -142,6 +142,13 @@ img {
 
 }
 
+.aaa {
+  background: #43485C;
+  color: white;
+}
+
+
+
 
 
 
@@ -493,7 +500,7 @@ html {
   height: 50px;
   line-height: 25px;
   text-align: center;
-  background: #1f2c6c;
+  background: #43485C;
   color: whitesmoke;
   padding-top: 2rem;
 }
