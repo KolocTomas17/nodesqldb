@@ -37,7 +37,6 @@ const App = () => {
         <Route path='content' element={<Content />} />
         <Route path='content/book/:id' element={<Book />} />
         <Route path='createBook' element={<CreateBook />} />
-        <Route path='navbar' element={<Navbar />} />
         <Route path='update-book/:id' element={<UpdateBook />} />
         <Route path='*' element={<Error />} />
       </Routes>

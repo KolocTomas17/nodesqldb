@@ -53,6 +53,14 @@
 }
 
 
+@media screen and (min-width: 769px) {
+  .columns:not(.is-desktop) {
+    display: flex;
+    flex-direction: row;
+}
+}
+
+
 .container {
   margin: 50px;
 }
@@ -106,6 +114,27 @@ img {
   max-width: fit-content;
   margin: auto;
 }
+
+.box {
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .box {
+    width: 1400px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 340px;
+  }
+
+}
+
+
 
 
 @media (prefers-reduced-motion: no-preference) {
