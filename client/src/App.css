@@ -120,16 +120,24 @@ img {
   justify-content: center;
 }
 
+
+
 @media (min-width: 1024px) {
   .box {
     width: 1400px;
   }
-
 }
 
 @media (max-width: 768px) {
   .box {
     width: 340px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .search {
+    display: none;
   }
 
 }

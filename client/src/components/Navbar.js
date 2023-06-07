@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faCartShopping } from '@fortawesome/free-solid-svg-icons'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHouse, faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   const [active, setActive] = useState("nav__menu");
@@ -20,37 +19,62 @@ function Navbar() {
   };
   return (
     <nav className="navbar py-4 is-fixed-top">
-       <div className="navbar-item" href="#">
-            <Link to="/">
-              <ul>
-              <FontAwesomeIcon icon={faHouse} /> 
-              </ul>
-            </Link>
-          </div>
       <ul className={active}>
+        <div className="navbar-item">
+          <Link to="/">
+            <ul className="navbar-item">
+              <FontAwesomeIcon icon={faHouse} style={{ color: "#65686c" }} />
+            </ul>
+          </Link>
+        </div>
+
         <div className="navbar-start">
           <ul className="navbar-item ">
-          <Link to="content" className="navbar-item">Produkty</Link>
-            </ul>
-            <ul className="navbar-item">
-            <Link to="kontakty" className="navbar-item">Kontakty</Link>
-            </ul>
-          </div>
+            <Link to="content" className="navbar-item">
+              Produkty
+            </Link>
+          </ul>
+          <ul className="navbar-item">
+            <Link to="kontakty" className="navbar-item">
+              Kontakty
+            </Link>
+          </ul>
+          <ul className="navbar-item">
+            <Link to="kosik" className="navbar-item">
+              <FontAwesomeIcon
+                icon={faCartShopping}
+                style={{ color: "#65686c" }}
+              />
+            </Link>
+          </ul>
+
+
+
+
+        </div>
+        
       </ul>
-      
-      
-      
-      
-      
+
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>
         <div className="line2"></div>
         <div className="line3"></div>
       </div>
+      <div className="navbar-end search">
+          <ul className="navbar-item">
+            <div className="field has-addons">
+              <div className="control">
+                <input className="input" type="text" placeholder="nazev" />
+              </div>
+              <div className="control">
+                <a className="button is-info">Hledat</a>
+              </div>
+            </div>
+          </ul>
+          </div>
+
     </nav>
   );
 }
-
-
 
 export default Navbar;
