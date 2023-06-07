@@ -85,11 +85,10 @@ const Body = () => {
             data-aos="fade-in"
             data-aos-easing="linear"
           >
-            <i className="fad fa-meteor fa-3x" />
+            <i className="fas fa-book fa-3x" />
             <hr />
             <h2>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            Velký výběr různých druhů mang
             </h2>
           </div>
           <div
@@ -97,50 +96,10 @@ const Body = () => {
             data-aos="fade-in"
             data-aos-easing="linear"
           >
-            <i className="fas fa-paint-brush fa-3x" />
+             <i className="fas fa-dollar-sign fa-3x" />
             <hr />
             <h2>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </h2>
-          </div>
-          <div
-            className="column is-4 has-text-centered"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-            <i className="fas fa-rocket fa-3x" />
-            <hr />
-            <h2>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </h2>
-          </div>
-        </div>
-        <hr />
-        <div className="columns is-12">
-          <div
-            className="column is-4 has-text-centered"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-            <i className="fas fa-upload fa-3x" />
-            <hr />
-            <h2>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </h2>
-          </div>
-          <div
-            className="column is-4 has-text-centered"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-            <i className="fas fa-truck fa-3x" />
-            <hr />
-            <h2>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            Mangy v přijatelné ceně
             </h2>
           </div>
           <div
@@ -151,8 +110,43 @@ const Body = () => {
             <i className="fas fa-phone fa-3x" />
             <hr />
             <h2>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            Jsme tu pro vás celý den
+            </h2>
+          </div>
+        </div>
+        <hr />
+        <div className="columns is-12">
+          <div
+            className="column is-4 has-text-centered"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <i className="fas fa-truck fa-3x" />
+            <hr />
+            <h2>
+            Rychlá doprava
+            </h2>
+          </div>
+          <div
+            className="column is-4 has-text-centered"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <i className="fas fa-reply fa-3x" />
+            <hr />
+            <h2>
+            Ryhlé vrácení během reklamace
+            </h2>
+          </div>
+          <div
+            className="column is-4 has-text-centered"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <i className="fas fa-paper-plane fa-3x" />
+            <hr />
+            <h2>
+             posíláme zásilku do 3 pracovních dnů
             </h2>
           </div>
         </div>

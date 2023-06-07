@@ -47,12 +47,7 @@ function Navbar() {
               />
             </Link>
           </ul>
-
-
-
-
         </div>
-        
       </ul>
 
       <div onClick={navToggle} className={icon}>
@@ -61,18 +56,17 @@ function Navbar() {
         <div className="line3"></div>
       </div>
       <div className="navbar-end search">
-          <ul className="navbar-item">
-            <div className="field has-addons">
-              <div className="control">
-                <input className="input" type="text" placeholder="nazev" />
-              </div>
-              <div className="control">
-                <a className="button aaa">Hledat</a>
-              </div>
+        <ul className="navbar-item">
+          <div className="field has-addons">
+            <div className="control">
+              <input className="input" type="text" placeholder="nazev" />
             </div>
-          </ul>
+            <div className="control">
+              <a className="button aaa">Hledat</a>
+            </div>
           </div>
-
+        </ul>
+      </div>
     </nav>
   );
 }
