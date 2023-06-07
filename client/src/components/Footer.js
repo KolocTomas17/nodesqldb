@@ -9,50 +9,50 @@ const Footer = () => {
         <strong className="white">Nakama Books</strong>
         <p>
           Tomáš Koloc
-          <Link to="https://instagram.com" target="_blank">
+          <a href="https://www.instagram.com/tomakyys/" target="_blank">
             <FontAwesomeIcon
               icon={faInstagram}
               beat
               style={{ color: "#cfcfcf" }}
             />
-          </Link>
-          <Link to="https://facebook.com" target="_blank">
+          </a>
+          <a href="https://www.facebook.com/tomas.koloc.9" target="_blank">
             <FontAwesomeIcon
               icon={faFacebook}
               beat
               style={{ color: "#cfcfcf" }}
             />
-          </Link>
+          </a>
           | Tomáš Sucharda
-          <Link to="https://instagram.com" target="_blank">
+          <a href="https://www.instagram.com/tomassucharda13/" target="_blank">
             <FontAwesomeIcon
               icon={faInstagram}
               beat
               style={{ color: "#cfcfcf" }}
             />
-          </Link>
-          <Link to="https://facebook.com" target="_blank">
+          </a>
+          <a href="https://www.facebook.com/tomas.sucharda.568" target="_blank">
             <FontAwesomeIcon
               icon={faFacebook}
               beat
               style={{ color: "#cfcfcf" }}
             />
-          </Link>
+          </a>
           | Tomáš Pelc
-          <Link to="https://instagram.com" target="_blank">
+          <a href="https://www.instagram.com/ten.zrzek/" target="_blank">
             <FontAwesomeIcon
               icon={faInstagram}
               beat
               style={{ color: "#cfcfcf" }}
             />
-          </Link>
-          <Link to="https://facebook.com" target="_blank">
+          </a>
+          <a href="https://www.facebook.com/tomas.pelc.99" target="_blank">
             <FontAwesomeIcon
               icon={faFacebook}
               beat
               style={{ color: "#cfcfcf" }}
             />
-          </Link>
+          </a>
         </p>
       </div>
     </>
