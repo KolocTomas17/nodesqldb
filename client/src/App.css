@@ -41,7 +41,17 @@
   margin: 0 auto;
   align-items: center;
   display: flex;
+  padding-top: 82px;
 }
+
+@media (max-width: 1024px) {
+  .card-image {
+    padding-top: 100px;
+    width: 155px;
+    
+  }
+}
+
 
 .container {
   margin: 50px;
@@ -347,7 +357,14 @@ html {
 }
 
 .main-content .section-light {
-  padding: 30px;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+.cards {
+  padding-top: 50px;
+  padding-top: 50px;
 }
 
 .main-content .section-light.about-me {
@@ -436,10 +453,7 @@ html {
 }
 
 .footer {
-  bottom: 0;
-  width: 100vw;
-  padding: 0;
-  height: 80px;
+  height: 50px;
   line-height: 25px;
   text-align: center;
   background: #1f2c6c;

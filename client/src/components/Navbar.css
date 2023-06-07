@@ -1,0 +1,71 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+.nav__brand {
+  text-transform: uppercase;
+}
+
+.nav__menu {
+  display: flex;
+  
+}
+.nav__toggler {
+  display: none;
+  
+}
+.nav__toggler div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(204, 204, 204);
+  transition: 0.3s ease-in;
+  
+}
+
+@media screen and (max-width: 1023px) {
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav__menu {
+    position: absolute;
+    top: 7vh;
+    height: 93vh;
+    right: 0;
+    width: 50vw;
+    background: rgb(255, 255, 255);
+    transform: translateY(-100%);
+    transition: 0.5s ease-out;
+    gap: 1rem;
+    display: block;
+    
+  }
+}
+
+.nav__active {
+  transform: translateX(0%);
+}
+
+
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-1px, 4px);
+}
+.toggle .line3 {
+  opacity: 0;
+}
+.toggle .line2 {
+  transform: rotate(45deg) translate(-1px, -4px);
+}
+
+.polozky {
+  color: black;
+}
