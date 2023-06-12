@@ -59,7 +59,7 @@ const Content = () => {
       */ }
 
       {books.result.map((book) => (
-        <BoxBook className="box"  id={book.id} name={book.name} publisher={book.publisher} author={book.author} price={book.price} language={book.language} image={book.image} />
+        <BoxBook className="box"  id={book.id} name={book.name} publisher={book.publisher} author={book.author} price={book.price} language={book.language} image={book.image} api={book.api} />
         
       ))}
     </div>

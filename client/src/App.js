@@ -1,5 +1,5 @@
 import "./App.css";
-import Header from "./Header";
+
 import Content from "./Content";
 import { Routes, Route } from "react-router-dom";
 // import User from "./components/User";
@@ -9,16 +9,19 @@ import CreateBook from "./components/CreateBook";
 import Error from "./components/Error";
 // import UpdateUser from "./components/UpdateUser";
 import UpdateBook from "./components/UpdateBook";
-import Body from "./body";
-import Navbar from "./components/Navbar";
 
-/**
- * TODO List
- * 1. Setup react router ✅
- * 2. Single user page ✅
- * 3. Create repo ✅
- */
+import Body from "./body";
+
+
+import Header from "./Header";
+
+
+
+
+
+
 const App = () => {
+  
   return (
     <>
       <Header />
@@ -40,6 +43,7 @@ const App = () => {
         <Route path='update-book/:id' element={<UpdateBook />} />
         <Route path='*' element={<Error />} />
       </Routes>
+     
     </>
   );
 };

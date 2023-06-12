@@ -18,7 +18,7 @@ function Navbar() {
     } else setIcon("nav__toggler");
   };
   return (
-    <nav className="navbar py-4 is-fixed-top">
+    <nav className="navbar py-4 is-fixed-top" >
       <ul className={active}>
         <div className="navbar-item">
           <Link to="/">
@@ -39,14 +39,7 @@ function Navbar() {
               Kontakty
             </Link>
           </ul>
-          <ul className="navbar-item">
-            <Link to="kosik" className="navbar-item">
-              <FontAwesomeIcon
-                icon={faCartShopping}
-                style={{ color: "#43485C" }}
-              />
-            </Link>
-          </ul>
+         
         </div>
       </ul>
 
@@ -55,18 +48,7 @@ function Navbar() {
         <div className="line2"></div>
         <div className="line3"></div>
       </div>
-      <div className="navbar-end search">
-        <ul className="navbar-item">
-          <div className="field has-addons">
-            <div className="control">
-              <input className="input" type="text" placeholder="nazev" />
-            </div>
-            <div className="control">
-              <a className="button aaa">Hledat</a>
-            </div>
-          </div>
-        </ul>
-      </div>
+
     </nav>
   );
 }

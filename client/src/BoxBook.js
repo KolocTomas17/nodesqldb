@@ -2,8 +2,16 @@ import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
+import StripeCheckout from "react-stripe-checkout";
+import axios from "axios";
+import { loadStripe } from "@stripe/stripe-js";
+
 const BoxBook = (props) => {
   const navigate = useNavigate();
+
+  const handlePayment = () => {
+    console.log("provedeno");
+  };
 
   const deleteBook = async () => {
     const res = fetch(`http://localhost:3000/book/${props.id}`, {
@@ -27,7 +35,7 @@ const BoxBook = (props) => {
             <div className="media">
               <div className="media-left">
                 <figure className="image ">
-                  <img src={props.image} alt="Image" className="img"/>
+                  <img src={props.image} alt="Image" className="img" />
                 </figure>
               </div>
               <div className="media-content">
@@ -36,29 +44,23 @@ const BoxBook = (props) => {
                   <h5>{props.author}</h5>
                   <p>Vydavatel {props.publisher}</p>
                   <p>Jazyk {props.language}</p>
-                  
-                  
-                  
-                
                 </div>
               </div>
-              <br/>
+              <br />
               <div className="media-right">
-                <Link to="/kosik">
-                <button type="submit" class="button" name="add">
-                    Koupit<FontAwesomeIcon
-                icon={faCartShopping}
-                style={{ color: "#43485C" }}
-              />
+                <StripeCheckout
+                  stripeKey="pk_test_51NHT9DDr7G8AESVUzXcnVUiIXddNEQcZW6scZS0kC0c9mHPNitOxEmg1NB5r5Iu4jrZsIriU5mIMk5nlSylhBcTp00wWSJ1dnj"
+                  token={handlePayment}
+                  amount={props.price * 100}
+                  currency="CZK"
+                >
+                  <button className="button" name="add" type="button">
+                    Zaplatit
                   </button>
-                  
-                </Link>
+                </StripeCheckout>
+
                 <p className="is-size-6">Cena {props.price} Kč</p>
               </div>
-              
-                
-                
-              
             </div>
           </div>
         </Link>

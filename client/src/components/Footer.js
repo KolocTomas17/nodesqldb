@@ -22,36 +22,6 @@ const Footer = () => {
               style={{ color: "#cfcfcf" }}
             />
           </a>
-          | Tomáš Sucharda
-          <a href="https://www.instagram.com/tomassucharda13/" target="_blank">
-            <FontAwesomeIcon
-              icon={faInstagram}
-              beat
-              style={{ color: "#cfcfcf" }}
-            />
-          </a>
-          <a href="https://www.facebook.com/tomas.sucharda.568" target="_blank">
-            <FontAwesomeIcon
-              icon={faFacebook}
-              beat
-              style={{ color: "#cfcfcf" }}
-            />
-          </a>
-          | Tomáš Pelc
-          <a href="https://www.instagram.com/ten.zrzek/" target="_blank">
-            <FontAwesomeIcon
-              icon={faInstagram}
-              beat
-              style={{ color: "#cfcfcf" }}
-            />
-          </a>
-          <a href="https://www.facebook.com/tomas.pelc.99" target="_blank">
-            <FontAwesomeIcon
-              icon={faFacebook}
-              beat
-              style={{ color: "#cfcfcf" }}
-            />
-          </a>
         </p>
       </div>
     </>
