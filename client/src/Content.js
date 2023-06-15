@@ -1,8 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import Box from "./Box";
 import BoxBook from "./BoxBook";
-import Header from "./Header";
 
 const Content = () => {
   const [users, setUsers] = useState([]);
@@ -49,18 +46,27 @@ const Content = () => {
   }
   return (
     <div className="cards">
-    
-     { /*<Link to="create">
+      {/*<Link to="create">
         <button className="button crud is-success">Vytvořit uživatele</button>
       </Link>
       {users.result.map((user) => (
         <Box id={user.id} name={user.name} age={user.age} image={user.image} />
       ))}
-      */ }
+      */}
 
       {books.result.map((book) => (
-        <BoxBook className="box"  id={book.id} name={book.name} publisher={book.publisher} author={book.author} price={book.price} language={book.language} image={book.image} api={book.api} />
-        
+        <BoxBook
+          className="box"
+          id={book.id}
+          name={book.name}
+          publisher={book.publisher}
+          author={book.author}
+          price={book.price}
+          language={book.language}
+          image={book.image}
+          api={book.api}
+          url={book.url}
+        />
       ))}
     </div>
   );

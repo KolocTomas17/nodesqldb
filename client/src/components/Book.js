@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "../App.css";
+import { useNavigate } from "react-router-dom";
 
 import React from "react";
 
 import "reactjs-popup/dist/index.css";
 import StripeCheckout from "react-stripe-checkout";
 
-const Book = () => {
+const Book = (props) => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const [book, setBook] = useState({});
   const [loaded, setLoaded] = useState(false);
@@ -60,16 +62,9 @@ const Book = () => {
               <p class="subtitle is-6">Cena {book.result[0].price} Kč</p>
               <p class="subtitle is-6">Jazyk {book.result[0].language}</p>
 
-              <StripeCheckout
-                stripeKey="pk_test_51NHT9DDr7G8AESVUzXcnVUiIXddNEQcZW6scZS0kC0c9mHPNitOxEmg1NB5r5Iu4jrZsIriU5mIMk5nlSylhBcTp00wWSJ1dnj"
-                token={handlePayment}
-                amount={book.result[0].price * 100}
-                currency="CZK"
-              >
-                <button className="button" name="add" type="button">
-                  Zaplatit
-                </button>
-              </StripeCheckout>
+              <a className="button" href={props.url} target="_blank">
+                Zaplatit
+              </a>
             </div>
           </div>
         </div>

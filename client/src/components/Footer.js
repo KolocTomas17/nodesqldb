@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <div className="footer">
         <strong className="white">Nakama Books</strong>
-        <p>
+        <p className="white">
           Tomáš Koloc
           <a href="https://www.instagram.com/tomakyys/" target="_blank">
             <FontAwesomeIcon

@@ -130,7 +130,39 @@ img {
   justify-content: center;
 }
 
+.boxx {
+  display: flex;
+  margin: 0 auto;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  width: 20% !important;
+  height: 360px;
+  align-items: center;
+  justify-content: center;
+}
 
+.boxx:hover {
+  background-color: #f7fef9;
+}
+
+p{
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+  .boxx {
+    background-color: #007bff;
+    display: contents;
+    width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 50%;
+  }
+}
 
 @media (min-width: 1024px) {
   .box {

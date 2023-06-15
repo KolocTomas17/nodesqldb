@@ -26,8 +26,8 @@ exports.getBookById = (req, res) => {
 
 exports.postBook = (req, res) => {
   db.query(
-    "INSERT INTO books (name, publisher, author, price, language, image, api) VALUES (?, ?, ?, ?, ?, ?);",
-    [req.body.name, req.body.publisher, req.body.author, req.body.price, req.body.language, req.body.image, req.body.api],
+    "INSERT INTO books (name, publisher, author, price, language, image, api, url) VALUES (?, ?, ?, ?, ?, ?, ?, ?);",
+    [req.body.name, req.body.publisher, req.body.author, req.body.price, req.body.language, req.body.image, req.body.api, req.body.url],
     (err, result, fields) => {
       if (err) return console.log(err);
       res.status(200).send({
@@ -40,8 +40,8 @@ exports.postBook = (req, res) => {
 
 exports.putBook = (req, res) => {
   db.query(
-    "UPDATE books SET name = ?, publisher = ?, author = ?, price = ?, language = ?, image = ?, api = ? WHERE id = ?;",
-    [req.body.name, req.body.publisher, req.body.author, req.body.price, req.body.language, req.body.image, req.body.api, req.params.id],
+    "UPDATE books SET name = ?, publisher = ?, author = ?, price = ?, language = ?, image = ?, api = ?, url = ? WHERE id = ?;",
+    [req.body.name, req.body.publisher, req.body.author, req.body.price, req.body.language, req.body.image, req.body.api, req.body.url, req.params.id],
     (err, result, fields) => {
       if (err) return console.log(err);
       res.status(200).send({

@@ -1,10 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import * as React from "react";
+import { Elements } from "@stripe/react-stripe-js";
 
 import StripeCheckout from "react-stripe-checkout";
-import axios from "axios";
-import { loadStripe } from "@stripe/stripe-js";
 
 const BoxBook = (props) => {
   const navigate = useNavigate();
@@ -30,8 +28,8 @@ const BoxBook = (props) => {
   return (
     <div className="container">
       <div className="columns">
-        <Link to={`book/${props.id}`}>
-          <div className="box">
+        <div className="box">
+          <Link to={`book/${props.id}`}>
             <div className="media">
               <div className="media-left">
                 <figure className="image ">
@@ -44,26 +42,18 @@ const BoxBook = (props) => {
                   <h5>{props.author}</h5>
                   <p>Vydavatel {props.publisher}</p>
                   <p>Jazyk {props.language}</p>
+                  <p className="is-size-6">Cena {props.price} Kč</p>
                 </div>
               </div>
               <br />
-              <div className="media-right">
-                <StripeCheckout
-                  stripeKey="pk_test_51NHT9DDr7G8AESVUzXcnVUiIXddNEQcZW6scZS0kC0c9mHPNitOxEmg1NB5r5Iu4jrZsIriU5mIMk5nlSylhBcTp00wWSJ1dnj"
-                  token={handlePayment}
-                  amount={props.price * 100}
-                  currency="CZK"
-                >
-                  <button className="button" name="add" type="button">
-                    Zaplatit
-                  </button>
-                </StripeCheckout>
-
-                <p className="is-size-6">Cena {props.price} Kč</p>
-              </div>
             </div>
-          </div>
-        </Link>
+          </Link>
+        </div>
+        <div className="box boxx">
+          <a className="button" href={props.url} target="_blank">
+            Zaplatit
+          </a>
+        </div>
       </div>
     </div>
   );
