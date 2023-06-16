@@ -14,6 +14,7 @@ import Body from "./body";
 
 
 import Header from "./Header";
+import Footer from "./components/Footer";
 
 
 
@@ -43,6 +44,7 @@ const App = () => {
         <Route path='update-book/:id' element={<UpdateBook />} />
         <Route path='*' element={<Error />} />
       </Routes>
+      <Footer></Footer>
      
     </>
   );

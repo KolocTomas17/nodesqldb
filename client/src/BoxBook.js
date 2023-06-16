@@ -1,8 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import * as React from "react";
-import { Elements } from "@stripe/react-stripe-js";
 
-import StripeCheckout from "react-stripe-checkout";
 
 const BoxBook = (props) => {
   const navigate = useNavigate();
@@ -26,6 +24,7 @@ const BoxBook = (props) => {
   };
 
   return (
+
     <div className="container">
       <div className="columns">
         <div className="box">
@@ -56,7 +55,13 @@ const BoxBook = (props) => {
         </div>
       </div>
     </div>
+    
+
+    
   );
+  
 };
+
+
 
 export default BoxBook;

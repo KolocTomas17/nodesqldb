@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import BoxBook from "./BoxBook";
 
+
 const Content = () => {
   const [users, setUsers] = useState([]);
   const [books, setBooks] = useState([]);
@@ -69,6 +70,7 @@ const Content = () => {
         />
       ))}
     </div>
+    
   );
 };
 
