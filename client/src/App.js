@@ -2,12 +2,12 @@ import "./App.css";
 
 import Content from "./Content";
 import { Routes, Route } from "react-router-dom";
-// import User from "./components/User";
+
 import Book from "./components/Book";
-// import CreateUser from "./components/CreateUser";
+
 import CreateBook from "./components/CreateBook";
 import Error from "./components/Error";
-// import UpdateUser from "./components/UpdateUser";
+
 import UpdateBook from "./components/UpdateBook";
 
 import Body from "./body";
@@ -15,6 +15,7 @@ import Body from "./body";
 
 import Header from "./Header";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 
 
@@ -42,6 +43,7 @@ const App = () => {
         <Route path='content/book/:id' element={<Book />} />
         <Route path='createBook' element={<CreateBook />} />
         <Route path='update-book/:id' element={<UpdateBook />} />
+        <Route path='contact' element={<Contact />} />
         <Route path='*' element={<Error />} />
       </Routes>
       <Footer></Footer>

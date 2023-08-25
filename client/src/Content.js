@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import BoxBook from "./BoxBook";
+import BackToTopBtn from "./components/BackToTopBtn";
 
 
 const Content = () => {
@@ -57,9 +58,10 @@ const Content = () => {
           url={book.url}
         />
       ))}
+   
+<BackToTopBtn></BackToTopBtn>
     </div>
-    
-  );
+  )
 };
 
 export default Content;

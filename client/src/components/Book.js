@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import React from "react";
 
 import "reactjs-popup/dist/index.css";
-import StripeCheckout from "react-stripe-checkout";
+
 
 const Book = (props) => {
   const navigate = useNavigate();

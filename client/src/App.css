@@ -113,7 +113,17 @@
 }
 
 
+.card-content {
+  width: 500px;
+  
+}
 
+@media (max-width: 426px) {
+  .card-content {
+   max-width: 100%;
+  }
+
+}
 
 img {
   max-height: 320px;
@@ -401,7 +411,10 @@ html {
   display: block;
   align-items: center;
   justify-content: center;
-  max-width: 50%;
+
+}
+.section {
+  padding-top: 100px;
 }
 
 .image {

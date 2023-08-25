@@ -1,4 +1,5 @@
 
+import BackToTopBtn from "./components/BackToTopBtn";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
 
@@ -173,6 +174,7 @@ const Body = () => {
     </div>
   </div>
 </div>
+<BackToTopBtn></BackToTopBtn>
     </>
   );
 };
