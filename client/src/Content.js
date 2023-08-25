@@ -3,22 +3,11 @@ import BoxBook from "./BoxBook";
 
 
 const Content = () => {
-  const [users, setUsers] = useState([]);
+
   const [books, setBooks] = useState([]);
   const [loaded, setLoaded] = useState(false);
 
-  const getUsers = async () => {
-    const res = await fetch("http://localhost:3000/user", {
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      method: "GET",
-    });
-    const data = await res.json();
-    setUsers(data);
-    setLoaded(true);
-  };
+
 
   const getBooks = async () => {
     const res = await fetch("http://localhost:3000/book", {
@@ -34,14 +23,13 @@ const Content = () => {
   };
 
   useEffect(() => {
-    getUsers();
     getBooks();
   }, []);
 
   if (!loaded) {
     return (
       <>
-        <p>Users and Books are loading...</p>
+        <p>Books are loading...</p>
       </>
     );
   }
