@@ -79,6 +79,15 @@
   display: flex;
   flex-direction:column;
   border-radius: 15px;
+  
+}
+
+@media (max-width: 768px) {
+  .cards {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+  }
 }
 
 
@@ -113,17 +122,15 @@
 }
 
 
+
+
 .card-content {
   width: 500px;
-  
+  display: inline-table;
+  padding-top: 50px;
 }
 
-@media (max-width: 426px) {
-  .card-content {
-   max-width: 100%;
-  }
 
-}
 
 img {
   max-height: 320px;
@@ -174,18 +181,9 @@ p{
   }
 }
 
-@media (min-width: 1024px) {
-  .box {
-    width: 1400px;
-  }
-}
 
-@media (max-width: 768px) {
-  .box {
-    width: 340px;
-  }
 
-}
+
 
 @media (max-width: 767px) {
   .search {

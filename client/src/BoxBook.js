@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import * as React from "react";
+
 
 
 const BoxBook = (props) => {
@@ -25,8 +25,8 @@ const BoxBook = (props) => {
 
   return (
 
-    <div className="container">
-      <div className="columns">
+    <div className="card-content">
+      <div className="card">
         <div className="box">
           <Link to={`book/${props.id}`}>
             <div className="media">
@@ -42,17 +42,16 @@ const BoxBook = (props) => {
                   <p>Vydavatel {props.publisher}</p>
                   <p>Jazyk {props.language}</p>
                   <p className="is-size-6">Cena {props.price} Kč</p>
+                  <a className="button" href={props.url} target="_blank">
+            Zaplatit
+          </a>
                 </div>
               </div>
               <br />
             </div>
           </Link>
         </div>
-        <div className="box boxx">
-          <a className="button" href={props.url} target="_blank">
-            Zaplatit
-          </a>
-        </div>
+       
       </div>
     </div>
     
