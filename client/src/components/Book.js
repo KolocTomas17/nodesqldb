@@ -45,8 +45,8 @@ const Book = (props) => {
 
   return (
     <>
-      <div className="card">
-        <div class="card-image">
+      <div className="card karta">
+        <div class="card">
           <figure class="image">
             <img src={book.result[0].image} alt="Placeholder image" />
           </figure>
@@ -55,12 +55,9 @@ const Book = (props) => {
           <div class="media">
             <div class="media-content">
               <h1 className="title is-3">{book.result[0].name} </h1>
-              <p class="subtitle is-4">Autor {book.result[0].author}</p>
-              <p class="subtitle is-5">
-                Vydavatelství {book.result[0].publisher}
-              </p>
+              <p className="title is-5">{book.result[0].category} </p>
+              <p class="subtitle is-5">{book.result[0].info}</p>
               <p class="subtitle is-6">Cena {book.result[0].price} Kč</p>
-              <p class="subtitle is-6">Jazyk {book.result[0].language}</p>
 
               <a className="button" href={props.url} target="_blank">
                 Zaplatit

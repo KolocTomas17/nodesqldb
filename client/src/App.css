@@ -114,7 +114,6 @@
 }
 @media (max-width: 425px) {
   .img {
-   background-color: #007bff;
    max-width: 205px;
     margin-bottom: 15px;
   }
@@ -248,7 +247,7 @@ html {
 }
 
 .hero {
-  background: rgba(0, 0, 0, 0.7) url(https://preview.redd.it/ttb4vo06m4r51.jpg?width=1080&crop=smart&auto=webp&v=enabled&s=e9a833f50899829d3bf63a1b971ec2a62010fce1);
+  background: rgba(0, 0, 0, 0.7) url(https://www.insportline.cz/upload/image/category/horska-kola_banner.jpg);
   background-blend-mode: darken;
   background-attachment: fixed;
   background-size: cover;
@@ -461,7 +460,8 @@ html {
 
 .cards {
   padding-top: 50px;
-  padding-top: 50px;
+  margin: 0 15% 0 15%;
+  
 }
 
 .main-content .section-light.about-me {
@@ -527,15 +527,20 @@ html {
 
 .main-content .section-color.services {
   padding-top: 5%;
-  padding-bottom: 10%;
-  padding-right: 25%;
-  padding-left: 25%;
+  padding-bottom: 5%;
+  padding-right: 30%;
+  padding-left: 30%;
   background-color: #43485c;
   color: white;
   text-align: center;
   justify-content: center;
   display: flex;
   margin: 0 auto;
+}
+
+.karta {
+  padding-top: 150px;
+  height: fit-content;
 }
 
 .main-content .section-color.services .title,
@@ -563,6 +568,10 @@ html {
   background: #43485C;
   color: whitesmoke;
   padding-top: 2rem;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .footer a {
@@ -573,10 +582,6 @@ html {
 .footer a i {
   font-size: 1.5rem;
   padding: 0px 10px;
-}
-
-.footer {
-  color: whitesmoke;
 }
 
 .fa-download {

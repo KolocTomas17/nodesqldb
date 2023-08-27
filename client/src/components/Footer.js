@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-        <strong className="white">Nakama Books</strong>
+        <strong className="white">Mbikes</strong>
         <p className="white">
           Tomáš Koloc
           <a href="https://www.instagram.com/tomakyys/" target="_blank">

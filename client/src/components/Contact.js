@@ -5,17 +5,13 @@ const Contact = () => {
         <section className="section" id="about">
   {/* Title */}
   <div className="section-heading">
-    <h3 className="title is-2">About Me</h3>
-    <h4 className="subtitle is-5">Tomas Koloc</h4>
+    <h4 className="title is-4">Tomáš Koloc</h4>
     <div className="container">
-      <p>
-        Web developer with more than <strong>3 years</strong> of well-rounded
-        experience with a degree in the field of
-        <strong> Computer Science</strong>,  knowledge of modern Web
-        techniques. Looking for an
-        opportunity to work and upgrade, as well as being involved in an
-        organization that believes in gaining a competitive edge and giving back
-        to the community.
+      <p className="subtitle is-5">
+        Jsem nadšenec do horských kol již od mala. Vždy jsem chtěl vlastnit obchod s nimi a rozumět jim. Chěl bych se toho co nejvíce věnovat a mít kolem toho přehled. Proto jsem se rozhodl vytvořit tento online obchod.
+      </p>
+      <p className="subtitle is-5">
+        Vlastníkem jsem pouze já, do budoucna se to možná změní dle růstu kariéry a zakázek.
       </p>
     </div>
   </div>
@@ -43,10 +39,6 @@ const Contact = () => {
                   <td>Email:</td>
                   <td>t.koloc@outlook.com</td>
                 </tr>
-                <tr>
-                  <td>School:</td>
-                  <td>Střední průmyslová škola Mladá Boleslav</td>
-                </tr>
               </tbody>
             </table>
           </div>
@@ -55,91 +47,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-    <div className="column">
-      {/* Skills */}
-      <div className="card">
-        <div className="card-content">
-          <h3 className="title is-4">Skills</h3>
-          <div className="content">
-            <article className="media">
-              <div className="media-content">
-                <div className="content">
-                  <p>
-                    <strong>JavaScript:</strong>
-                    <br />
-                    <progress
-                      className="progress is-primary"
-                      value={50}
-                      max={100}
-                    />
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article className="media">
-              <div className="media-content">
-                <div className="content">
-                  <p>
-                    <strong>Node.js:</strong>
-                    <br />
-                    <progress
-                      className="progress is-primary"
-                      value={30}
-                      max={100}
-                    />
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article className="media">
-              <div className="media-content">
-                <div className="content">
-                  <p>
-                    <strong>React:</strong>
-                    <br />
-                    <progress
-                      className="progress is-primary"
-                      value={60}
-                      max={100}
-                    />
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article className="media">
-              <div className="media-content">
-                <div className="content">
-                  <p>
-                    <strong>HTML5/CSS3</strong>
-                    <br />
-                    <progress
-                      className="progress is-primary"
-                      value={95}
-                      max={100}
-                    />
-                  </p>
-                </div>
-              </div>
-            </article>
-            <article className="media">
-              <div className="media-content">
-                <div className="content">
-                  <p>
-                    <strong>Databases</strong>
-                    <br />
-                    <progress
-                      className="progress is-primary"
-                      value={75}
-                      max={100}
-                    />
-                  </p>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </div>
+  
   </div>
   <BackToTopBtn></BackToTopBtn>
 </section>

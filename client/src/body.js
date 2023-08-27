@@ -2,177 +2,21 @@
 import BackToTopBtn from "./components/BackToTopBtn";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
+import ContactUs from "./mainPage/ContactUs";
+import Hero from "./mainPage/Hero";
+import MainContent from "./mainPage/MainContent";
+import Services from "./mainPage/Services";
 
 const Body = () => {
   return (
     <>
-      <div className="header-wrapper" id="home">
-        <section className="hero is-large">
-          <div className="hero-body">
-            <div className="container has-text-centered">
-              <h2 className="title">Nakama Books</h2>
-              <h1 className="subtitle profession">
-                Vaše destinace pro všechny manga milovníky
-              </h1>
-            </div>
-          </div>
-        </section>
-      </div>
+    <Hero></Hero>
       <div className="main-content">
   <div className="section-light about-me" id="about-me">
-    <div className="container">
-      <div className="column is-12 about-me">
-        <h1 className="title has-text-centered section-title">O nás</h1>
-      </div>
-      <div className="columns is-multiline">
-        <div
-          className="column is-6 has-vertically-aligned-content"
-          data-aos="fade-right"
-        >
-          <p className="is-larger">
-            <strong>
-              Vítejte v našem malém obchodě s mangami! Jsme skupina nadšenců,
-              kteří se společně rozhodli sdílet svou lásku k japonským komiksům
-              a grafickým románům s ostatními fanoušky. Naše malá firma se
-              specializuje na prodej autentických japonských mang, které jsou
-              populární po celém světě.
-            </strong>
-          </p>
-          <br />
-          <p>
-            Naše vášeň pro mangu se promítá do každého aspektu našeho obchodu.
-            Pečlivě vybíráme každou položku v naší nabídce a zajistíme, aby byla
-            autentická, kvalitní a v souladu s nejnovějšími trendy. Snažíme se
-            poskytnout co nejlepší služby a produkty, aby si naši zákazníci
-            mohli užít autentickou zkušenost s japonskou kulturou.
-          </p>
-          <p>
-            Kromě toho, že nabízíme širokou škálu mangu, jsme také tu pro
-            fanoušky, kteří hledají nové tituly, rady na čtení, nebo doporučení
-            z určitého žánru. Jsme tu pro všechny fanoušky mangu, kteří chtějí
-            objevit nové světy a dobrodružství prostřednictvím vizuálních
-            příběhů.
-          </p>
-          <p>
-            Děkujeme vám za vaši podporu a doufáme, že se staneme vaší oblíbenou
-            destinací pro nákupy mang. Sledujte nás na sociálních médiích a
-            zůstaňte v obraze s našimi nejnovějšími přírůstky do vaší kolekce.
-          </p>
-          <br />
-          <div className="is-divider" />
-        </div>
-        <div className="column is-6 right-image " data-aos="fade-left">
-          <img
-            className="is-rounded"
-            src="https://picsum.photos/id/366/600/375"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
+    <MainContent></MainContent>
   </div>
-  <div className="section-color services" id="services">
-    <div className="container">
-      <div className="columns is-multiline">
-        <div
-          className="column is-12 about-me"
-          data-aos="fade-in"
-          data-aos-easing="linear"
-        >
-          <h1 className="title has-text-centered section-title">Naše služby</h1>
-        </div>
-        <div className="columns is-12">
-          <div
-            className="column is-4 has-text-centered"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-            <i className="fas fa-book fa-3x" />
-            <hr />
-            <h2>
-            Velký výběr různých druhů mang
-            </h2>
-          </div>
-          <div
-            className="column is-4 has-text-centered"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-             <i className="fas fa-dollar-sign fa-3x" />
-            <hr />
-            <h2>
-            Mangy v přijatelné ceně
-            </h2>
-          </div>
-          <div
-            className="column is-4 has-text-centered"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-            <i className="fas fa-phone fa-3x" />
-            <hr />
-            <h2>
-            Jsme tu pro vás celý den
-            </h2>
-          </div>
-        </div>
-        <hr />
-        <div className="columns is-12">
-          <div
-            className="column is-4 has-text-centered"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-            <i className="fas fa-truck fa-3x" />
-            <hr />
-            <h2>
-            Rychlá doprava
-            </h2>
-          </div>
-          <div
-            className="column is-4 has-text-centered"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-            <i className="fas fa-reply fa-3x" />
-            <hr />
-            <h2>
-            Ryhlé vrácení během reklamace
-            </h2>
-          </div>
-          <div
-            className="column is-4 has-text-centered"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-            <i className="fas fa-paper-plane fa-3x" />
-            <hr />
-            <h2>
-             posíláme zásilku do 3 pracovních dnů
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div className="section-light contact" id="contact">
-    <div className="container">
-      <div
-        className="columns is-multiline"
-        data-aos="fade-in-up"
-        data-aos-easing="linear"
-      >
-        <div className="column is-12 about-me">
-          <h1 className="title has-text-centered section-title">
-            Kontaktujte nás
-          </h1>
-        </div>
-        <div className="column is-8 is-offset-2">
-          <Form></Form>
-        </div>
-      </div>
-    </div>
-  </div>
+<Services></Services>
+<ContactUs></ContactUs>
 </div>
 <BackToTopBtn></BackToTopBtn>
     </>

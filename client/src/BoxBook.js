@@ -1,7 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
 
-
-
 const BoxBook = (props) => {
   const navigate = useNavigate();
 
@@ -24,7 +22,6 @@ const BoxBook = (props) => {
   };
 
   return (
-
     <div className="card-content">
       <div className="card">
         <div className="box">
@@ -38,29 +35,24 @@ const BoxBook = (props) => {
               <div className="media-content">
                 <div className="content">
                   <h4>{props.name}</h4>
-                  <h5>{props.author}</h5>
-                  <p>Vydavatel {props.publisher}</p>
-                  <p>Jazyk {props.language}</p>
+                  <h5>{props.category}</h5>
+
                   <p className="is-size-6">Cena {props.price} Kč</p>
-                  <a className="button" href={props.url} target="_blank">
-            Zaplatit
-          </a>
                 </div>
               </div>
+
               <br />
             </div>
+            <p>Vydavatel {props.info}</p>
           </Link>
+          <br/>
+          <a className="button" href={props.url} target="_blank">
+            Zaplatit
+          </a>
         </div>
-       
       </div>
     </div>
-    
-
-    
   );
-  
 };
-
-
 
 export default BoxBook;

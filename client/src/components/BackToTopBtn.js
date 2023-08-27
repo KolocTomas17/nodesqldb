@@ -31,13 +31,14 @@ const BackToTopBtn = () => {
                 bottom: '50px',
                 right: '50px',
                 fontSize: '50px',
-                color: 'black',
+                color: '#C6C2C2',
                 cursor: 'pointer',
                 width: '50px',
                 height: '50px',
-                border: '2px solid black',
+                border: '2px solid #C6C2C2',
                 backgroundColor: 'transparent',
-                borderRadius: '50%'
+                borderRadius: '50%',
+                position: 'fixed    '
             }}  onClick={scrollUp} />
         )}
         

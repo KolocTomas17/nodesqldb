@@ -49,10 +49,9 @@ const Content = () => {
           className="box"
           id={book.id}
           name={book.name}
-          publisher={book.publisher}
-          author={book.author}
+          category={book.category}
+          info={book.info}
           price={book.price}
-          language={book.language}
           image={book.image}
           api={book.api}
           url={book.url}
