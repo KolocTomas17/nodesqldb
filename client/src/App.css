@@ -144,6 +144,8 @@ img {
 .box {
   align-items: center;
   justify-content: center;
+  background-color: #F2F2F2;
+  display: table-caption;
 }
 
 .boxx {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "../App.css";
 import { useNavigate } from "react-router-dom";
 
@@ -13,6 +13,7 @@ const Book = (props) => {
   const { id } = useParams();
   const [book, setBook] = useState({});
   const [loaded, setLoaded] = useState(false);
+  const [show, setShow] = useState(false);
 
   const handlePayment = async () => {
     console.log("provedeno");
@@ -55,13 +56,19 @@ const Book = (props) => {
           <div class="media">
             <div class="media-content">
               <h1 className="title is-3">{book.result[0].name} </h1>
+
               <p className="title is-5">{book.result[0].category} </p>
               <p class="subtitle is-5">{book.result[0].info}</p>
               <p class="subtitle is-6">Cena {book.result[0].price} Kč</p>
+              
 
               <a className="button" href={props.url} target="_blank">
                 Zaplatit
               </a>
+              {show ? <p>{book.result[0].spec}</p> : null}
+              <button onClick={() => setShow(!show)}> Zobrazit komponenty </button>
+              
+              
             </div>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 
+
 const BoxBook = (props) => {
   const navigate = useNavigate();
 
@@ -20,6 +21,10 @@ const BoxBook = (props) => {
   const handleDelete = () => {
     deleteBook();
   };
+
+
+
+   
 
   return (
     <div className="card-content">
@@ -49,6 +54,7 @@ const BoxBook = (props) => {
           <a className="button" href={props.url} target="_blank">
             Zaplatit
           </a>
+        
         </div>
       </div>
     </div>
