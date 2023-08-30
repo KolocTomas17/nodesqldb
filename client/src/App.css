@@ -182,6 +182,17 @@ p{
   }
 }
 
+.is-right {
+  display: inline;
+  left: 176px;
+
+  
+}
+
+.komponents {
+  margin-bottom: 24px;
+}
+
 
 
 

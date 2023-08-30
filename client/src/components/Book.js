@@ -7,16 +7,15 @@ import React from "react";
 
 import "reactjs-popup/dist/index.css";
 
-
 const Book = (props) => {
   const navigate = useNavigate();
   const { id } = useParams();
   const [book, setBook] = useState({});
   const [loaded, setLoaded] = useState(false);
-  const [show, setShow] = useState(false);
+  const [isToggled, setIsToggled] = useState(false);
 
-  const handlePayment = async () => {
-    console.log("provedeno");
+  const handleToggle = () => {
+    setIsToggled((prevState) => !prevState);
   };
 
   const getBook = async () => {
@@ -60,15 +59,16 @@ const Book = (props) => {
               <p className="title is-5">{book.result[0].category} </p>
               <p class="subtitle is-5">{book.result[0].info}</p>
               <p class="subtitle is-6">Cena {book.result[0].price} Kč</p>
-              
 
-              <a className="button" href={props.url} target="_blank">
-                Zaplatit
-              </a>
-              {show ? <p>{book.result[0].spec}</p> : null}
-              <button onClick={() => setShow(!show)}> Zobrazit komponenty </button>
-              
-              
+              <a className="button" href={book.result[0].url} target="_blank">
+            Zaplatit
+          </a>
+
+              {isToggled ? <p className="komponents">{book.result[0].spec}</p> : null}
+              <button className="button is-right"  onClick={handleToggle}>
+                {isToggled ? "Skrýt komponenty" : "Zobrazit komponenty"}
+              </button>
+
             </div>
           </div>
         </div>
