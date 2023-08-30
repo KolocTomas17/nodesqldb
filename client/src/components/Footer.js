@@ -22,7 +22,9 @@ const Footer = () => {
               style={{ color: "#cfcfcf" }}
             />
           </a>
+          <p className="white">Pouze pro edukativní účely</p>
         </p>
+        
       </div>
     </>
   );

@@ -51,6 +51,7 @@ const Content = () => {
           name={book.name}
           category={book.category}
           info={book.info}
+          velikost={book.velikost}
           spec={book.spec}
           price={book.price}
           image={book.image}

@@ -13,13 +13,15 @@ const Contact = () => {
       <p className="subtitle is-5">
         Vlastníkem jsem pouze já, do budoucna se to možná změní dle růstu kariéry a zakázek.
       </p>
+      <p>Platba probíhá pomocí falešné karty, tzn. nemusíte tam dávat údaje od své karty, ale stačí Vám pouze smyšlené.</p>
+      <p>Například číslo karty: 5454 5454 5454 5454</p>
     </div>
   </div>
   <div className="columns has-same-height is-gapless">
     <div className="column">
       <div className="card">
         <div className="card-content">
-          <h3 className="title is-4">Profile</h3>
+          <h3 className="title is-4">Kontakt</h3>
           <div className="content">
             <table className="table-profile">
               <tbody>

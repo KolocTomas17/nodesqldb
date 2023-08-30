@@ -54,6 +54,9 @@ const BoxBook = (props) => {
           <a className="button" href={props.url} target="_blank">
             Zaplatit
           </a>
+          <box className="box velikost">
+            {props.velikost}
+          </box>
         
         </div>
       </div>

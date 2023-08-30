@@ -193,6 +193,17 @@ p{
   margin-bottom: 24px;
 }
 
+.velikost {
+  display: inline-flex;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: default;
+  margin-left: 24px;
+  background-color: #FFFFFF;
+}
+
 
 
 
